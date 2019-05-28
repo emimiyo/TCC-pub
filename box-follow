@@ -1,0 +1,45 @@
+		<div id="box-follow">
+				<h4><?= $_SESSION['usuario'] ?></h4>
+				<br/>
+				<div class="col-md-3">
+					POSTS <br/> <?= $qtde_tweets ?>
+				</div>
+				<div class="col-md-3">
+					SEGUIDORES <br /> <?= $qtde_seguidores ?>
+				</div>
+			</div>
+		</div>
+
+
+		echo '<div class="media border border-secondary list-group-item">
+		<div>
+		<img id="perfil-post" src="imagens/unnamed.jpg" class="rounded-circle" alt="img-perfil">
+		<h5 class="mt-0 list-group-item-heading" >'.$registro['usuario'].' <small> - <i class="far fa-clock"> </i> '.$registro['data_inclusao_formatada'].'</small></h5>
+		</div>';
+
+		echo '<div class="media-body"><br>
+		';
+		echo '<p class="list-group-item-text text-break">'.$registro['post'].'</p>
+		</div>
+		<figure class="figure">
+		<img src="imagens/unnamed.jpg" class="figure-img img-fluid rounded" alt="">
+		<figcaption class="figure-caption text-right">'.$registro['usuario'].'</figcaption>
+		</figure>
+
+		';
+		?>
+		<div id="btn-del">
+			<div class="dropdown">
+				<button style="background-color: #4717f6" type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href=""></button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="delete.php?id_post=<?php echo $registro['id_post'] ?>">Delete</a>
+				</div>
+			</div></div>
+			<?php
+
+			echo '</div><br><br>';
+
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+	<p>Footer</p>
+</div>
