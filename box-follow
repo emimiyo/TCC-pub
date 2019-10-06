@@ -2,7 +2,7 @@
 				<h4><?= $_SESSION['usuario'] ?></h4>
 				<br/>
 				<div class="col-md-3">
-					POSTS <br/> <?= $qtde_tweets ?>
+					POST <br/> <?= $qtde_tweets ?>
 				</div>
 				<div class="col-md-3">
 					SEGUIDORES <br /> <?= $qtde_seguidores ?>
@@ -25,7 +25,6 @@
 		<img src="imagens/unnamed.jpg" class="figure-img img-fluid rounded" alt="">
 		<figcaption class="figure-caption text-right">'.$registro['usuario'].'</figcaption>
 		</figure>
-
 		';
 		?>
 		<div id="btn-del">
@@ -38,7 +37,6 @@
 			<?php
 
 			echo '</div><br><br>';
-
 
 <div class="jumbotron text-center" style="margin-bottom:0">
 	<p>Footer</p>
